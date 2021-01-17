@@ -1,0 +1,32 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath "com.android.tools.build:gradle:4.1.1"
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+plugins {
+    id 'java'
+    id 'idea'
+    id 'jacoco'
+    id 'com.diffplug.gradle.spotless' version '4.5.1'
+    id 'io.codearte.nexus-staging' version '0.22.0'
+    id 'de.marcphilipp.nexus-publish' version '0.4.0'
+    id 'de.undercouch.download' version '4.1.1'
+    id 'com.jfrog.bintray' version '1.8.5'
+    id 'org.ajoberstar.git-publish' version '3.0.0'
+
+}
+allprojects {
+    repositories {
+        google()
+        jcenter()
+    }
+}
+
